@@ -1,3 +1,13 @@
-# First Chapter
+事前準備
+------------
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+## Monaca
+
+- URL <https://ja.monaca.io>
+- 利用登録
+- Monacaデバッカーのインストール
+
+## ニフティクラウド mobile backend
+
+- URL <http://mb.cloud.nifty.com/>
+- 利用登録

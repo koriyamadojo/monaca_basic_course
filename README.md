@@ -2,19 +2,28 @@
 ----------------
 東北TECH道場 郡山道場で、実施している「ハイブリッドアプリ講座」の資料です。 ツールとして「Monca」と「ニフティクラウドmobile backend（mBaaS) を使用します
 
+- [東北TECH道場 郡山道場 - ハイブリッドアプリ講座](https://www.gitbook.com/book/koriyamadojo/basic_course/details)
 
-## ツールのメモ
+## ツールリンク集
+
+### Monaca
 
 * [Monaca](https://ja.monaca.io/)
-* [ニフティクラウドmobile backend（mBaaS）](http://mb.cloud.nifty.com/)
+* [Monaca Docs](https://docs.monaca.io/ja/)
+* [Monacaアプリ開発講座](https://ja.monaca.io/service/training.html)
+* [Monaca - GitHub](https://github.com/monaca)
+  - [monaca/project-templates](https://github.com/monaca/project-templates)
+  - [monaca - s3 ](http://s3.asial.co.jp/~monaca/)
+* [アシアル株式会社 - SlideShare](http://www.slideshare.net/AsialCorp/presentations)
+* [Monacaで学ぶはじめてのプログラミング～モバイルアプリ入門編〜」](https://ja.monaca.io/book/001/)
 
-* [事前準備 - Monacaとニフティクラウドmobile backendでwebコンテンツのスマホアプリ化を体験してみよう](http://www.slideshare.net/mobilebackend/monacamobile-backendweb)
+### Nifty Cloud mobile backend (ncmb)
+
+* [Nifty Cloud mobile backend（mBaaS）](http://mb.cloud.nifty.com/)
+- [クラウド ドキュメント | ニフティクラウド](http://cloud.nifty.com/doc/)
+- [NIFTYCloud-mbaas - GitHub](https://github.com/NIFTYCloud-mbaas)
+- [ニフティ株式会社 - SlideShare](http://www.slideshare.net/mobilebackend)
+
+### Monaca x Nifty Cloud mobile backend
+
 * [Monaca×mobile backendで手軽にハイブリッドアプリ開発！](http://mb.cloud.nifty.com/monaca_mbaas/)
-* [Monaca 提供のアップロード機能](http://docs.monaca.mobi/cur/ja/manual/deploy/appstore/app_submission/)
-
-## メモ
-
-- [3回目のもくもく会をやりましたっ～☆](http://blog.mb.cloud.nifty.com/?p=7693&_hsenc=p2ANqtz-9HPHlM6gXzwXKM1XUvV17s1ojkuEd034lmKI23q3UrGwXb6eJHPNo5Ey1EhvPRdog5u1MvtrwxIJT4z7htyUxPKZ_bUQ&_hsmi=27836459#civictech)
-- [○○mapを作るアプリを作ってみた！](http://qiita.com/fumishitan/items/2eff8fbd62e6ba31854e)
-- [○○mapをつくるアプリで七福神mapを作ってみた](http://qiita.com/fumishitan/items/497db47af5be4923bdde)
-
