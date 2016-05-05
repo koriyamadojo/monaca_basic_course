@@ -1,6 +1,6 @@
 東北TECH道場 郡山道場 - ハイブリッドアプリ講座
 ----------------
-東北TECH道場 郡山道場で、実施している「ハイブリッドアプリ講座」の資料です。 ツールとして「Monaca」と「ニフティクラウドmobile backend（mBaaS) を使用します
+東北TECH道場 郡山道場で、実施している「ハイブリッドアプリ開発講座」の資料です。 ツールとして「Monaca」と「ニフティクラウドmobile backend（mBaaS)」 を使用します
 
 - [東北TECH道場 郡山道場 - ハイブリッドアプリ講座](https://www.gitbook.com/book/koriyamadojo/basic_course/details)
 
