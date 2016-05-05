@@ -1,29 +1,34 @@
-## Monacaのユーザ登録方法
+## Monacaのアカウント登録
 
-1. Monacaのホームページ (<https://ja.monaca.io>) に行く
+Monacaのアカウント登録方法を説明します。
 
-![](./images/200/monaca_registration_000.png)
+![](./images/2/monaca_ncmb_002.png)
 
-2. Monacaのアカウント登録画面
+#### 1. Monacaのホームページ
 
-Monacaの利用規約の同意の元に、メールアドレスとパスワードを入力します。
-パスワード同じものを２回入力してください。
-入力後「今すぐ試す」ボタンを押します
+Monacaのホームページ (<https://ja.monaca.io>) の右上のサインアップのリンクをクリックします。
 
-![](./images/200/monaca_registration_001.png)
+![](./images/2/monaca_registration_000.png)
 
+#### 2. Monacaのアカウント登録画面
 
-※ GitHubアカウントを持っている方は、GitHubアカウントでも登録することが出来ます。
+Monacaの利用規約を読んで同意した後に、メールアドレスとパスワードを入力します。
+パスワードは同じものを２回入力してください。
+入力後「今すぐ試す」ボタンを押してください。
 
-3. 確認メール送信
+![](./images/2/monaca_registration_001.png)
 
-登録したメールアドレスに確認メールが送信されます。
+※ GitHubアカウントを持っている方はGitHubアカウントでも登録することも可能です。
 
-![](./images/200/monaca_registration_002.png)
+#### 3. 確認メール送信
 
+登録したメールアドレスに登録の確認メールが送信されます。
 
-4. 登録完了
+![](./images/2/monaca_registration_002.png)
 
-受信したメールに添付されているリンクアドレスをクリックして、登録を完了してください。
+#### 4. 登録完了
 
-![](./images/200/monaca_registration_003.png)
+受信したメールの本文に記載されているリンクアドレスをクリックして登録を完了してください。
+クリックをすることで登録が完了となります。
+
+![](./images/2/monaca_registration_003.png)
