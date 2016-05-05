@@ -7,13 +7,13 @@
    * [ニフティクラウド mobile backendとは](about_ncmb.md)
    * [HTML5ハイブリッドアプリとは](abount_html5_hybrid_app.md)
        * [PhoneGapとCordova](abount_phonegap_cordova.md)
-* [事前準備](chapter1.md)
-   * Monaca登録
-   * ニフティクラウド mobile backend登録
-       * 開発環境構築
-   * Monaca IDE
-   * Monacaデバッカー
-       * ツールの使い方とデバック方法
+* [事前準備](prep.md)
+   * [Monacaのアカウント登録](prep_monaca.md)
+   * [NIFTY Cloud mobile backendのアカウント登録](prep_nifty.md)
+   * 開発環境構築
+     * Monaca IDE
+     * Monacaデバッカー
+     * ツールの使い方とデバック方法
    * Monaca
        * Plugin
    * ニフティクラウド mobile backend
