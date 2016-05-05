@@ -11,13 +11,12 @@
    * [GitHubのアカウント登録](prep_github.md)
    * [Monacaのアカウント登録](prep_monaca.md)
    * [ニフティクラウド mobile backendのアカウント登録](prep_nifty.md)
-   * 開発環境構築
-       * Monaca IDE
-       * Monacaデバッカー
-       * ツールの使い方とデバック方法
-   * Monaca
-       * Plugin
-   * ニフティクラウド mobile backend
+   * [Monaca 開発環境](dev_environment.md)
+     * [Monaca クラウド IDE](dev_monaca.md)
+     * [Monacaデバッカー](dev_debugger.md)
+   * [ニフティクラウド mobile backend](dev_nifty.md)
+   * [ツールの使い方とデバック方法](dev_tools.md)
+     * [Sample Project - Hello World](dev_sample.md)
 * [ウェブプログラミング入門](prep_programming.md)
    * [HTML入門](intro_html.md)
    * jsdo.itでHTMLを書いてみる
