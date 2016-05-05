@@ -1,6 +1,8 @@
 事前準備
 ------------
 
+### Monacaとニフティクラウド mobile backend
+
 ![](./images/2/monaca_ncmb_000.png)
 
 Monacaとニフティクラウド mobile backendを使ってアプリを作成する為にはアカウント登録をする必要があります。
@@ -11,8 +13,8 @@ Monacaとニフティクラウド mobile backendを使ってアプリを作成�
 
 ![](./images/2/monaca_ncmb_001.png)
 
----
-
-GitHubも利用していく予定ですのでGitHubアカウントをお持ちでない方はアカウントの登録をお願いします。
+### GitHub
 
 ![](./images/2/github-logo.jpg)
+
+GitHubはソースコード管理やコードレビュー等に利用していく予定ですので、GitHubアカウントをお持ちでない方はアカウントの登録をお願いします。
