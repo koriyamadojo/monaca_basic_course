@@ -2,6 +2,8 @@
 
 Monacaのアカウント登録方法を説明します。
 
+![](./images/2/monaca_ncmb_002.png)
+
 #### 1. Monacaのホームページ
 
 Monacaのホームページ (<https://ja.monaca.io>) の右上のサインアップのリンクをクリックします。

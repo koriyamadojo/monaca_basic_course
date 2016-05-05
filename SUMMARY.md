@@ -10,7 +10,7 @@
 * [事前準備](prep.md)
    * [GitHubのアカウント登録](prep_github.md)
    * [Monacaのアカウント登録](prep_monaca.md)
-   * [NIFTY Cloud mobile backendのアカウント登録](prep_nifty.md)
+   * [ニフティクラウド mobile backendのアカウント登録](prep_nifty.md)
    * 開発環境構築
        * Monaca IDE
        * Monacaデバッカー
