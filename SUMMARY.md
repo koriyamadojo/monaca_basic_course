@@ -18,8 +18,7 @@
    * Monaca
        * Plugin
    * ニフティクラウド mobile backend
-* [プログラム準備](prep_programming.md)
-   * ウェブブラウザの仕組み 
+* [ウェブプログラミング入門](prep_programming.md) 
    * HTML入門
    * jsdo.itでHTMLを書いてみる
    * CSS入門
