@@ -8,4 +8,4 @@
 
 • HTML5( JavaScript)で記述したアプリケーショ ンをAndroidを含むさまざまなモバイル端末上で実 行するためのフレームワーク
 • Androidを例にすると、HTML5で書かれたコード はAndroidの中にあるWebViewというウェブブラ ウザの機能を持った部品を使って実行できる
-• それにWebViewの外のAndroid独自の機能（カメ ラ・センサー・Push通知など）との連携機能をつ け、フレームワーク化したものがCordova。
+• それにWebViewの外のAndroid独自の機能（カメ ラ・センサー・Push通知など）との連携機能をつけ、フレームワーク化したものがCordova。
