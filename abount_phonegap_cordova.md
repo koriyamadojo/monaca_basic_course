@@ -1,8 +1,12 @@
 # Cordovaについて
 
-Monacaが裏で使っている技術的
+Monacaの裏側で使われている、技術的基盤のライブラリ。
+
+正式名称は「Apache Cordova」。
 
 ## Apache Cordovaとは
+
+[https://cordova.apache.org/](https://cordova.apache.org/)
 
 * オープンソースのモバイルアプリ開発フレームワーク
 * Apacheソフトウェア財団に寄贈されたため「Apache」とついている
