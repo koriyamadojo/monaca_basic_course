@@ -17,9 +17,9 @@
 * [アシアル株式会社 - SlideShare](http://www.slideshare.net/AsialCorp/presentations)
 * [Monacaで学ぶはじめてのプログラミング～モバイルアプリ入門編〜」](https://ja.monaca.io/book/001/)
 
-### Nifty Cloud mobile backend (ncmb)
+### ニフティクラウド mobile backend (NCMB)
 
-* [Nifty Cloud mobile backend（mBaaS）](http://mb.cloud.nifty.com/)
+* [ニフティクラウド mobile backend（mBaaS）](http://mb.cloud.nifty.com/)
 - [クラウド ドキュメント | ニフティクラウド](http://cloud.nifty.com/doc/)
 - [NIFTYCloud-mbaas - GitHub](https://github.com/NIFTYCloud-mbaas)
 - [ニフティ株式会社 - SlideShare](http://www.slideshare.net/mobilebackend)
