@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [はじめに](preface.md)
    * [今期の予定](about_term_koriyamadojo_2016.md)
-   * Monacaとは
+   * [Monacaとは](about_monaca.md)
    * ニフティクラウド mobile backendとは
    * HTML5ハイブリッドアプリとは
        * PhoneGapとCordova
