@@ -8,6 +8,7 @@
    * [HTML5ハイブリッドアプリとは](abount_html5_hybrid_app.md)
        * [PhoneGapとCordova](abount_phonegap_cordova.md)
 * [事前準備](prep.md)
+   * GitHubのアカウント登録
    * [Monacaのアカウント登録](prep_monaca.md)
    * [NIFTY Cloud mobile backendのアカウント登録](prep_nifty.md)
    * 開発環境構築
