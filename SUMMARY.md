@@ -6,7 +6,7 @@
    * [Monacaとは](about_monaca.md)
    * [ニフティクラウド mobile backendとは](about_ncmb.md)
    * [HTML5ハイブリッドアプリとは](abount_html5_hybrid_app.md)
-       * PhoneGapとCordova
+       * [PhoneGapとCordova](abount_phonegap_cordova.md)
 * [事前準備](chapter1.md)
    * Monaca登録
    * ニフティクラウド mobile backend登録
