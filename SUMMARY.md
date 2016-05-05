@@ -19,8 +19,9 @@
        * Plugin
    * ニフティクラウド mobile backend
 * [プログラム準備](prep_programming.md)
-   * HTTP/HTTPSとは
+   * ウェブブラウザの仕組み 
    * HTML入門
+   * jsdo.itでHTMLを書いてみる
    * CSS入門
    * JacaScript入門
    * jQuery入門
