@@ -1,11 +1,13 @@
 # Cordovaについて
 
+Monacaが裏で使っている技術的
+
 ## Apache Cordovaとは
 
-• オープンソースのモバイルアプリ開発フレームワーク
-• Apacheソフトウェア財団に寄贈されたため 「Apache」とついている
-• もともとはPhoneGapという名称だったが、Adobe 社が買収したことによりPhoneGapはAdobeのプロ ダクト名になり、フレームワーク自体はCordovaと 呼ばれるようになった
+* オープンソースのモバイルアプリ開発フレームワーク
+* Apacheソフトウェア財団に寄贈されたため「Apache」とついている
+* もともとはPhoneGapという名称だったが、Adobe社が買収したことによりPhoneGapはAdobeのプロダクト名になり、フレームワーク自体はCordovaと呼ばれるようになった
 
-• HTML5( JavaScript)で記述したアプリケーショ ンをAndroidを含むさまざまなモバイル端末上で実 行するためのフレームワーク
-• Androidを例にすると、HTML5で書かれたコード はAndroidの中にあるWebViewというウェブブラ ウザの機能を持った部品を使って実行できる
-• それにWebViewの外のAndroid独自の機能（カメ ラ・センサー・Push通知など）との連携機能をつけ、フレームワーク化したものがCordova。
+* HTML5(JavaScript)で記述したアプリケーションをAndroidを含むさまざまなモバイル端末上で実行するためのフレームワーク
+* Androidを例にすると、HTML5で書かれたコードはAndroidの中にあるWebViewというウェブブラウザの機能を持った部品を使って実行できる
+* それにWebViewの外のAndroid独自の機能（カメラ・センサー・Push通知など）との連携機能をつけ、フレームワーク化したものがCordova。
