@@ -16,26 +16,25 @@
      * [Monacaデバッカー](dev_debugger.md)
    * [ニフティクラウドの開発環境](dev_nifty.md)
      * [ニフティクラウドのダッシュボード](dev_nifty_dashboard.md)
-   * [Sample Project - Hello World](dev_sample.md)
+   * [HelloWorldアプリ作成](dev_sample.md)
 * [ウェブプログラミング入門](prep_programming.md)
    * [HTML入門](intro_html.md)
    * jsdo.itでHTMLを書いてみる
    * CSS入門
    * JacaScript入門
    * jQuery入門
+   * GitHub入門
    * Onsen UI入門
 * アプリテーマ
-   * 動かすだけ
-       * Hello World
-   * クライアントだけ
+   * クライアントのみのアプリ
        * おみくじアプリ
        * カメラアプリ
-   * サーバを使う、Ajax通信する
+   * サーバやAjax通信をするアプリ
        * RSSリーダー
            * Ajax通信
        * 地図アプリ
            * 位置(ポイント)登録
-   * ロジックを入れてアプリを作成
+   * ロジックを入れたアプリ
        * 勤怠アプリ
            * データベース
        * シンプルゲーム

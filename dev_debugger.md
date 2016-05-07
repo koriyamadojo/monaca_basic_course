@@ -3,7 +3,9 @@ Monacaデバッカー
 
 Monacaデバッガーは、iPhoneやAndroid端末上で動作するアプリです。
 
-![](./images/2/monaca_debugger_000.png)
+<div class="android">
+  <img src="./images/2/monaca_debugger_000.png">
+</div>
 
 MonacaクラウドIDE等とMonacaクラウドを経由して通信をすることで実際の端末を使った検証(動作確認をすることが)出来ます
 
@@ -33,12 +35,15 @@ MonacaクラウドIDE等とMonacaクラウドを経由して通信をするこ�
 
 Androidアプリの画面例
 
-![](./images/2/monaca_debugger_004.png)
+<div class="android">
+  <img src="./images/2/monaca_debugger_004.png">
+</div>
 
 ### Androidアプリの操作パネル
 
-![](./images/2/monaca_debugger_005.png)
-
+<div class="android">
+  <img src="./images/2/monaca_debugger_005.png">
+</div>
 
 ## 参考
 

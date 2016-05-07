@@ -1,0 +1,8 @@
+.android {
+    text-align : center;
+}
+
+.android img {
+    width : 300px;
+    border: 1px #ff0000 solid;
+}
