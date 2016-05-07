@@ -19,11 +19,11 @@
 
 ### ニフティクラウド mobile backend (NCMB)
 
-* [ニフティクラウド mobile backend（mBaaS）](http://mb.cloud.nifty.com/)
+* [ニフティクラウド mobile backend](http://mb.cloud.nifty.com)
 - [クラウド ドキュメント | ニフティクラウド](http://cloud.nifty.com/doc/)
 - [NIFTYCloud-mbaas - GitHub](https://github.com/NIFTYCloud-mbaas)
 - [ニフティ株式会社 - SlideShare](http://www.slideshare.net/mobilebackend)
 
-### Monaca x Nifty Cloud mobile backend
+### Monaca x ニフティクラウド mobile backend
 
 * [Monaca×mobile backendで手軽にハイブリッドアプリ開発！](http://mb.cloud.nifty.com/monaca_mbaas/)
