@@ -12,14 +12,13 @@
    * [Monacaのアカウント登録](prep_monaca.md)
    * [ニフティクラウド mobile backendのアカウント登録](prep_nifty.md)
    * [Monacaの開発環境](dev_environment.md)
-     * [Monaca クラウド IDE](dev_monaca.md)
-     * [Monacaデバッカー](dev_debugger.md)
+       * [Monaca クラウド IDE](dev_monaca.md)
+       * [Monacaデバッカー](dev_debugger.md)
    * [ニフティクラウドの開発環境](dev_nifty.md)
-     * [ニフティクラウドのダッシュボード](dev_nifty_dashboard.md)
+       * [ニフティクラウドのダッシュボード](dev_nifty_dashboard.md)
    * [HelloWorldアプリ作成](dev_sample.md)
 * [ウェブプログラミング入門](prep_programming.md)
    * [HTML入門](intro_html.md)
-   * jsdo.itでHTMLを書いてみる
    * CSS入門
    * JacaScript入門
    * jQuery入門
