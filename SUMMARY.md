@@ -19,7 +19,7 @@
    * [HelloWorldアプリ作成](dev_sample.md)
 * [ウェブプログラミング入門](prep_programming.md)
    * [HTML入門](intro_html.md)
-   * CSS入門
+   * [CSS入門](cssru_men.md)
    * JacaScript入門
    * jQuery入門
    * GitHub入門
