@@ -41,3 +41,30 @@ CSSには3つの書き方があります。
 <div class='green'>緑の字</div>
 
 ```
+
+## よく使うCSSスタイル名
+
+### color
+
+フォントの色
+
+### font-size
+
+フォントサイズ
+
+### margin
+
+外の余白
+
+### padding
+
+中の余白
+
+### height width
+
+高さ、幅
+
+
+
+参考：
+実戦的 HTML & CSS 入門 | TipsZone  http://tipszone.jp/20120713_html/
