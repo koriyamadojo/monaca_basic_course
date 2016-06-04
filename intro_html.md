@@ -89,7 +89,7 @@ HTML5以前はもっと複雑な宣言が必要でしたが、HTML5前提でい�
 
 テーブルを作ります。
 
-`table>(thead>tr>th{ヘッダー$}*4)+(tbody>(tr>td{データ$}*4)*3)`をEMMETで展開してみましょう。
+`ju`をEMMETで展開してみましょう。
 
 ```html
     <table>
