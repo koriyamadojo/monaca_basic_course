@@ -20,7 +20,7 @@
 * [ウェブプログラミング入門](prep_programming.md)
    * [HTML入門](intro_html.md)
    * [CSS入門](cssru_men.md)
-   * JacaScript入門
+   * [JacaScript入門](js.md)
    * jQuery入門
    * GitHub入門
    * Onsen UI入門
