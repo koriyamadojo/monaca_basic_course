@@ -1,12 +1,13 @@
 #JacaScript入門
 ##準備
 JavaScriptには二つの記述方法があります。
+
 1. HTMLファイルの`<script >`タグ内に記述する
 2. 外部jsファイルとして記述する
 
 今回は1で解説を進めます。  
 
-まず[HTML入門](https://koriyamadojo.gitbooks.io/basic_course/content/intro_html.html)を参考に、Blankプロジェクトを作成し、EMMETでHTMLの基本形を作成します。
+まず[HTML入門](https://koriyamadojo.gitbooks.io/basic_course/content/intro_html.html)を参考にBlankプロジェクトを作成し、EMMETでHTMLの基本形を作成します。
 ```html
 <!doctype html>
 <html lang="ja">
@@ -40,6 +41,7 @@ JavaScriptには二つの記述方法があります。
 これでHTMLファイル内にJavaScriptを記述する準備は完了です。  
 以降は、この`<script>`タグの中にJavaScriptを記述していきます。
 
+<br>
 ##関数とイベント
 JavaScriptは、大きく分けて関数とイベントで記述されています。
 
@@ -53,8 +55,8 @@ JavaScriptは、大きく分けて関数とイベントで記述されていま�
     }
 </script>
 ```
-関数abcは、実行すると画面上に以下のアラートを表示します。
-![](スクリーンショット 2016-06-11 15.19.23.png)
+関数abcは、実行すると画面上に以下のアラートを表示します。  
+![アラート](スクリーンショット 2016-06-11 15.19.23.png)
 
 関数の特徴は、他の処理から呼び出されることによって動き始めることです。  
 呼び出されない限り実行されることはありません。  
@@ -64,15 +66,16 @@ JavaScriptは、大きく分けて関数とイベントで記述されていま�
 イベントは、WEBブラウザ上で何らかのアクションが起こると発生します。
 
  - WEBブラウザそのものから発生するイベントの例
-  + ブラウザの読込が完了した時
-  + ウィンドウのサイズを変更した時
+	 + HTMLの読込が完了した時
+	 + ウィンドウのサイズを変更した時
  - ユーザーがアクションを起こしたタイミングで発生するイベントの例
-  + ボタンをクリックした時
-  + Enterキーを押した時
+	 + ボタンをクリックした時
+	 + Enterキーを押した時
 
 JavaScriptは、このようなイベントが発生したタイミングで処理を記述することができます。
 
-上記の例の中から、「ブラウザの読込が完了した時」のイベント処理を記述してみます。  
+####window.onloadイベントを作る
+上記の例の中から、「HTMLの読込が完了した時」のイベント処理を記述してみます。  
 ```html
 <script type="text/javascript">
     window.onload = function () {
@@ -80,6 +83,60 @@ JavaScriptは、このようなイベントが発生したタイミングで処�
     }
 </script>
 ```
-`window.onload`が「ブラウザの読込が完了した時」というイベントを指定しています。  
-この時に実行したい処理を`function() { }`の中に記述しています。  
+`window.onload`が「HTMLの読込が完了した時」というイベントを指定しています。  
+この時に実行したい処理を`function() { }`の中に記述しています。
 
+イベント処理の外に関数を定義しておき、それを呼び出すこともできます。  
+以下は関数「abc」をイベントのタイミングで呼び出しています。
+```html
+<script type="text/javascript">
+    window.onload = function () {
+        abc();
+    }
+    function abc() {
+        alert("abc");
+    }
+</script>
+```
+<br>
+####ボタンクリックイベントを作る
+上記の処理を「画面内のボタンがクリックされた時だけ実行する」という処理に書き換えてみます。
+
+「Hello Worldアプリ」プロジェクトを新規作成すると、最初から画面内にボタンが作成されています。  
+このボタンをコピーして、好きなIDを付けてボタンを作成しましょう。
+```html
+<a class="button--large" href="phonegap-demo.html">Start Demo</a>
+<a class="button--large" id="btn1">#btn1</a>
+```
+このようになっていればOKです。  
+![](スクリーンショット 2016-06-11 15.50.42.png)
+
+次はJavaScriptです。
+
+ボタンのクリックイベントは、HTMLの読込が完了した後に定義する必要があります。  
+つまり`window.onload`の中で記述すれば良いのです。
+```html
+<script type="text/javascript">
+    window.onload = function () {
+        var eBtn1 = document.getElementById("btn1");	// ①
+        eBtn1.addEventListener("click", function(){		// ②
+            alert("abc");								// ③
+        }
+    }
+</script>
+```
+[解説]
+
+①対象となるボタンを指定  
+　先程の例では「btn1」というIDを付けたので、IDを元に要素を取得しています。
+
+②イベント定義  
+　取得したボタンに対してaddEventListenerでクリックイベントを定義します。
+
+③処理  
+　イベント内で行う処理を記述します。
+
+ここまで書けたら保存し、プレビューからボタンをクリックしてみてください。  
+アラートが表示されたら成功です。
+
+<br>
