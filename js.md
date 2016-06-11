@@ -7,7 +7,19 @@ JavaScriptには二つの記述方法があります。
 今回は1で解説を進めます。  
 
 まずHTML入門を参考に、EMMETでHTMLの基本形を作成します。
+```html
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+	<title>タイトル</title>
+</head>
+<body>
+	
+</body>
+</html>
 
+```
 
 ##関数とイベント
 JavaScriptは、大きく分けて関数とイベントで記述されています。
