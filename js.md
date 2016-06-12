@@ -1,5 +1,8 @@
 #JacaScript入門
 ##準備
+JavaScriptとは、HTML上で動作するスクリプト言語です。  
+HTMLに対して動的な処理を作成することができます。
+
 JavaScriptには二つの記述方法があります。
 
 1. HTMLファイルの`<script >`タグ内に記述する
@@ -8,19 +11,7 @@ JavaScriptには二つの記述方法があります。
 今回は1で解説を進めます。  
 
 まず[HTML入門](https://koriyamadojo.gitbooks.io/basic_course/content/intro_html.html)を参考にBlankプロジェクトを作成し、EMMETでHTMLの基本形を作成します。
-```html
-<!doctype html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-	<title>タイトル</title>
-</head>
-<body>
-	
-</body>
-</html>
 
-```
 このとき、`<head>`というタグが作成されます。  
 タグの中で`script[type='text/javascript']`と打ってTabキーを押すと、JavaScriptを記述するためのタグが作成されます。
 ```html
@@ -29,8 +20,7 @@ JavaScriptには二つの記述方法があります。
 <head>
     <meta charset="UTF-8">
 	<title>タイトル</title>
-    <script type="text/javascript">
-    </script>
+    <script type="text/javascript"></script> // 追加したタグ
 </head>
 <body>
 	
@@ -74,6 +64,7 @@ JavaScriptは、大きく分けて関数とイベントで記述されていま�
 
 JavaScriptは、このようなイベントが発生したタイミングで処理を記述することができます。
 
+<br>
 ####window.onloadイベントを作る
 上記の例の中から、「HTMLの読込が完了した時」のイベント処理を記述してみます。  
 ```html
@@ -86,18 +77,6 @@ JavaScriptは、このようなイベントが発生したタイミングで処�
 `window.onload`が「HTMLの読込が完了した時」というイベントを指定しています。  
 この時に実行したい処理を`function() { }`の中に記述しています。
 
-イベント処理の外に関数を定義しておき、それを呼び出すこともできます。  
-以下は関数「abc」をイベントのタイミングで呼び出しています。
-```html
-<script type="text/javascript">
-    window.onload = function () {
-        abc();
-    }
-    function abc() {
-        alert("abc");
-    }
-</script>
-```
 <br>
 ####ボタンクリックイベントを作る
 上記の処理を「画面内のボタンがクリックされた時だけ実行する」という処理に書き換えてみます。
@@ -109,7 +88,7 @@ JavaScriptは、このようなイベントが発生したタイミングで処�
 <a class="button--large" id="btn1">#btn1</a>
 ```
 このようになっていればOKです。  
-![](スクリーンショット 2016-06-11 15.50.42.png)
+![アラート](スクリーンショット 2016-06-11 15.50.42.png)  
 
 次はJavaScriptです。
 
