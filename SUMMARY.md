@@ -23,7 +23,7 @@
    * [JacaScript入門](js.md)
    * [jQuery入門](jq.md)
    * GitHub入門
-   * Onsen UI入門
+   * [Onsen UI入門](onsenui.md)
 * アプリテーマ
    * クライアントのみのアプリ
        * おみくじアプリ
