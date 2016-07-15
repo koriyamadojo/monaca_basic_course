@@ -26,8 +26,8 @@
    * [Onsen UI入門](onsenui.md)
 * アプリテーマ
    * クライアントのみのアプリ
-       * おみくじアプリ
-       * カメラアプリ
+       * [おみくじアプリ](app_omikuji.md)
+       * [カメラアプリ](app_camera.md)
    * サーバやAjax通信をするアプリ
        * RSSリーダー
            * Ajax通信
