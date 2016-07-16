@@ -94,3 +94,36 @@ scriptタグ内の中身をカット＆ペーストします。
 
 <img width="885" alt="2016-07-16 09 32 49" src="https://cloud.githubusercontent.com/assets/843192/16891649/4719e6f2-4b38-11e6-8bcf-b213982ad5e1.png">
 
+### JavaScriptのイベント登録もJavaScript内で行うようにリファクタリングする
+
+このアプリでは、「はじめる」を押したときにおみくじを発動する、というJavaScriptイベントを登録していますが、現時点ではその指定は`onClick='omikuji'`というようにHTMLファイルに記述されてしまっています。
+
+このアプリではこのクリックイベント1つしかないので問題になりませんが、たくさんボタンがあってそれを1つ1つのボタンに記述していると、コードが込み入ってきてよくわからなくなってしまいます。
+
+HTMLファイルは構造だけを記述するべきなので、このコードもさきほど作った`omikuji.js`のほうに移動してみましょう。
+
+まずHTMLファイルのほうから、onClickイベント部分の記述は削除します。
+
+<img width="775" alt="2016-07-16 10 05 16" src="https://cloud.githubusercontent.com/assets/843192/16891889/d0e64af2-4b3c-11e6-858e-0e3ca35a2c54.png">
+
+
+そして、`omikuji.js`のほうに以下の4行を追加します。
+
+<img width="876" alt="2016-07-16 10 14 27" src="https://cloud.githubusercontent.com/assets/843192/16891939/1b34ceac-4b3e-11e6-8928-a725bf9899cd.png">
+
+これでもう一度動作確認を行ってみましょう。さきほどと同じようにおみくじアプリが動作しました。
+
+なお、この4行部分は、下記のように書いてもほぼ同じように動作します。
+
+```javascript
+window.onload = function() {
+    var button = document.getElementById("button");
+    button.addEventListener("click", omikuji, false);
+}
+```
+
+どちらを記述してもOKですが、`document.addEventListener('DOMContentLoaded'`を使うほうが、どちらかというと望ましいようです。
+
+このように、ソースコードの移動や整理を行って、よりよいコードに直す作業をリファクタリングといいます。
+
+おみくじアプリについては以上です。
