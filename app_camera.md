@@ -35,7 +35,7 @@ HTMLを作って行きましょう。
 
 「撮影」ボタンを押すと、カメラが起動して写真が撮影できます。撮った写真は画面に表示されていきます。連続して写真を撮っていくと、どんどん右に追加されていきます。「削除」を押すと、写真を消去します。
 
-<img witdh="300" src='https://cloud.githubusercontent.com/assets/843192/16892508/b42487fe-4b4f-11e6-92d8-bf283275bd94.png' >
+<img width="300" src='https://cloud.githubusercontent.com/assets/843192/16892508/b42487fe-4b4f-11e6-92d8-bf283275bd94.png' >
 
 ## 課題
 
