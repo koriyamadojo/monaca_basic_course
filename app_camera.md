@@ -21,15 +21,21 @@ Monacaからカメラ機能を使うには、Cordovaプラグインとしてカ�
 
 HTMLを作って行きましょう。
 
-<img width="415" alt="2016-07-16 12 05 17" src="https://cloud.githubusercontent.com/assets/843192/16892427/9717004e-4b4d-11e6-9b61-d5ad719394c1.png">
+<img width="414" alt="2016-07-16 12 25 31" src="https://cloud.githubusercontent.com/assets/843192/16892527/7172f142-4b50-11e6-932e-7f4b730bf8fb.png">
 
 ここでは、「撮影」ボタンと「消去」ボタンを追加して、その下に、撮影した画像が表示される領域を作りました。
 
 ## JavaScriptのコーディング
 
 カメラの撮影と表示をする部分をJavaScriptでコーディングしていきます。
+wwwフォルダの下にjsフォルダを作り、camera.jsというファイルを新規作成して、下記のコードを入力します。
 
 <img width="578" alt="2016-07-16 12 17 01" src="https://cloud.githubusercontent.com/assets/843192/16892497/3845a17c-4b4f-11e6-9670-b384f4b82927.png">
+
+jsファイルができたら、HTMLファイルのほうから読み込むようにします。
+
+<img width="510" alt="2016-07-16 12 26 18" src="https://cloud.githubusercontent.com/assets/843192/16892531/9f758f28-4b50-11e6-884d-16dae7b86630.png">
+
 
 ## 動作確認
 
