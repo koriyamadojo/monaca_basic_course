@@ -70,10 +70,27 @@ headタグ内のscriptタグ内に下記のコードを入力していきます�
 
 まず、cssの外部ファイルはstyle.cssというものがあるので、それを使います。styleタグ内に記載した内容を、style.css内にカット＆ペーストしてください。
 
-<img width="662" alt="omikuji-008" src="https://cloud.githubusercontent.com/assets/843192/16891626/b6bb76b6-4b37-11e6-8d2b-fb17da7fbcf6.png">
+画像のパス（そのコードが記述されたファイルから見たときの画像ファイルの位置が変わっているので、2行目の
+
+    background-image: url("images/omikuji-bg.png");
+
+を
+
+    background-image: url("../images/omikuji-bg.png");
+
+に修正します。
+
+下記のようになればOKです。
+
+<img width="689" alt="2016-07-16 09 41 37" src="https://cloud.githubusercontent.com/assets/843192/16891718/862e1d44-4b39-11e6-8409-bcf5820874df.png">
 
 次にJavaScriptも外部ファイルに移しましょう。
 
 wwwフォルダの下に、jsフォルダを作り、その中で新規ファイルを作成して、omikuji.jsと名前をつけます。
 
 <img width="901" alt="omikuji-009" src="https://cloud.githubusercontent.com/assets/843192/16891635/e1bfe982-4b37-11e6-983b-63762059fc01.png">
+
+scriptタグ内の中身をカット＆ペーストします。
+
+<img width="885" alt="2016-07-16 09 32 49" src="https://cloud.githubusercontent.com/assets/843192/16891649/4719e6f2-4b38-11e6-8bcf-b213982ad5e1.png">
+
