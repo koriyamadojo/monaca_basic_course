@@ -129,5 +129,5 @@ window.onload = function() {
 
 * 「吉」「凶」の画像を用意しました。「平」を消して、「大吉」「中吉」「吉」「凶」の4つからどれかが出るようにアプリを修正してみてください。
 
-https://s3-ap-northeast-1.amazonaws.com/tohokutechdojo-koriyama/monaca-omikuji/omikuji-kichi.png
+https://s3-ap-northeast-1.amazonaws.com/tohokutechdojo-koriyama/monaca-omikuji/omikuji-kichi.png  
 https://s3-ap-northeast-1.amazonaws.com/tohokutechdojo-koriyama/monaca-omikuji/omikuji-kyou.png
