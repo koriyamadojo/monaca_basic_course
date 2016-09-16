@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/ncmb-2.1.2.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError, geoOption);
+    </script>
+
+    <button onclick="save_geopoint()">ポイントを保存する</button>
+    <button onclick ="find_geopoint()" style="width:100%;">ポイントを見る</button>
+
+    <div class="wrapper">
+        <div id="canvas" style="width:100%; height:400px"</div>
+    </div>
+</body>
+</html>
