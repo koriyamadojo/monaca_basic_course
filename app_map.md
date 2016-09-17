@@ -2,78 +2,84 @@
 
 [地図アプリ](https://docs.monaca.io/ja/sampleapp/samples/sample_rss_reader/)を作ります。
 
-地図アプリのサンプルコードはGitHubからダウンロード出来ます。
+地図アプリのサンプルコードはGitHubからダウンロードすることが出来ます。
 - <https://github.com/koriyamadojo/monaca-map-sample>
 
 <img width="480" src="./images/422/000_1.png">
 
+このアプリでは、サーバーサイドのニフティクラウド mobile backendサービスで利用するのがゴールです。
 
-
-このアプリではニフティクラウドでサーバを利用するのがゴールです。
-
-こちらを参考に解説します。
+このアプリは下記を参考に作成しています。
 - [○○mapを作るアプリを作ってみた！](http://qiita.com/fumishitan/items/2eff8fbd62e6ba31854e)
 - [○○mapをつくるアプリで七福神mapを作ってみた](http://qiita.com/fumishitan/items/497db47af5be4923bdde)
-- [ニフティクラウドコンソール](https://console.mb.cloud.nifty.com)
 
 ---
 
 ### leaflet
 
-地図表示には、leaflet <http://leafletjs.com/> というJavaScriptのライブラリを使ってOpenStreetMapの表示します。
+地図表示は「leaflet」というJavaScriptライブラリを使います。
+このアプリではOpenStreetMapを表示しますが、「leaflet」の設定を変更すれば他の地図に変更することも可能です。
+注意点としてGoogleMapに変更することも可能ですがライセンスの問題でleafletプラグインを使う必要があります。
 
 <img width="480" src="./images/422/000.png">
 
+leaflet: <http://leafletjs.com/>
+
 ---
 
-## プロジェクトの作成
+## Monacaのプロジェクトの作成
 
-ニフティクラウド用の空のプロジェクトを作成します。
+Monaca IDEで、ニフティクラウド mobile backendのプロジェクトを作成します。
 
-「新規プロジェクト作成」→「サンプルアプリ」→「ニフティクラウド mobile backend用 blankアプリ」
+「新規プロジェクト作成」→「サンプルアプリ」→「ニフティクラウド mobile backend用 blankアプリ」の順に選択をします。
 
 <img width="480" src="./images/422/001.png">
 <img width="480" src="./images/422/002.png">
 
-プロジェクト名は「Mapアプリ」としておいてください
+プロジェクト名は「Mapアプリ」してください。
 
 <img width="480" src="./images/422/003.png">
 
 ---
 
-## サーバのプロジェクト作成
+## ニフティクラウド mobile backendのプロジェクト作成
 
-ニフティクラウドmobile backend <http://mb.cloud.nifty.com/>へ行ってニフティIDでログインをします。
+次にニフティクラウド mobile backendに地図アプリ用のプロジェクトを作成をします。
+
+ニフティクラウドmobile backend <http://mb.cloud.nifty.com/>のWebサイトからニフティIDでログインをします。
 
 <img width="480" src="./images/422/100.png">
 
-サーバー側のアプリを新規作成します。
-アプリ名は「map_server」とでもしておいてください。
-アプリ名に使えるのは<font color="red">半角英数字かアンダーバー</font>だけです。
+ニフティクラウド mobile backendのプロジェクトを新規作成します。
+アプリ名は「map_server」としてください。
+注意点として、アプリ名に使用できる文字は<font color="red">半角英数字かアンダーバー</font>だけです。日本語は使用できません。
 
 <img width="480" src="./images/422/101.png">
 
-表示された「アプリケーションキー」と「クライアントキー」は、サーバーにアクセスするときに必要にるので、何処かにコピーして保存をしておいてください。２つのキーの保存が出来たらOKボタンを押します。
+表示された「アプリケーションキー」と「クライアントキー」は、Monacaアプリからニフティクラウド mobile backendにアクセスするときに必要となりますので、2つのキーはメモしておいてください。２つのキーのメモが完了したらOKボタンを押します。
 
 <img width="480" src="./images/422/102.png">
 
-アプリケーションキー
-b7e90af2afe7cef0da5c99cefea09fbbfa832542b07634722883519071d5bdad
-クライアントキー
-f75b8f348459fddf66d9182736949dfa00eb9b605c2bbe9d6c289f62e67ce445
+##### キーの例
+- アプリケーションキー
+  - b7e90af2afe7cef0da5c99cefea09fbbfa832542b07634722883519071d5xxxx
+- クライアントキー
+  - f75b8f348459fddf66d9182736949dfa00eb9b605c2bbe9d6c289f62e67xxxxx
 
-## サーバーのダッシュボード画面
+## ニフティクラウド mobile backendのダッシュボード画面
 
-この画面が、ニフティクラウドmobile backendのダッシュボードと呼ばれる画面で、作成したアプリ別に管理されます。
-これでサーバを利用することが出来るようになりました。
+プロジェクトの作成が完了すると、ニフティクラウド mobile backendのダッシュボードが表示されます。
+ダッシュボードでアプリに関するサーバ側の設定や確認をすることが出来ます。
 
 <img width="480" src="./images/422/103.png">
 
+ニフティクラウド mobile backendの準備はこれだけです。
+
 ---
 
-## Monacaで開発
+## Monacaで開発作業
 
-MonacaのIDEに戻って、プログラミングをします
+Monaca IDEで、アプリの開発作業をして行きます。
 
 <img width="480" src="./images/422/104.png">
 
@@ -84,13 +90,15 @@ MonacaのIDEに戻って、プログラミングをします
 * index.html
   - 地図を表示するメイン画面のページ
 * js/app.js
-  - アプリを制御するプログラムを記述する
+  - 地図アプリを制御するプログラムを記述していきます。
 
 ---
 
 ### 必要な JS/CSS コンポーネント
 
-* jQuery Mobile (Monaca Version) Ver1.3.1
+#### jQuery Mobile (Monaca Version) Ver1.3.1
+
+JavaScriptの開発には「jQuery Mobile ライブラリ」を使用します。
 
 <img width="480" src="./images/422/105.png">
 
@@ -106,7 +114,9 @@ MonacaのIDEに戻って、プログラミングをします
 
 ### 必要な Cordova プラグイン
 
-* Nifty (既に追加済み)
+Cordova プラグインの設定をします。
+
+* Nifty (プロジェクト作成時に設定済)
   - ニフティクラウドmobile backendを利用する為のプラグイン
 * Geolocation (新規追加)
   - 位置情報を利用する為のプラグイン
@@ -117,20 +127,22 @@ MonacaのIDEに戻って、プログラミングをします
 
 ### app.jsの追加
 
-JavaScriptのapp.sjファイルをMonacaにアップロードします。
+地図アプリ用のapp.js(JavaScriptファイル)を作成しておいたので、これをMonacaへアップロードします。
+
+#### アップロードの方法
 app.jsファイルを下記リンクから右クリック→「リンク先を別名で保存」を選択してダウンロードしてください
 
 * [app.jsのダウンロード](./js/422/app.js)
 
-ファイルメニューから「アップロード」を選択するかIDEにのjsフォルダーを右クリックして「アップロード」を選択してください。
+ファイルメニューから「アップロード」を選択するか、IDEのjsフォルダーを右クリックして「アップロード」を選択すればダウンロードすることが出来ます。
 
 <img width="480" src="./images/422/109.png">
 
-先程に保存した、app.jsファイルをアップロードしてください。
+ダウンロードした「app.jsファイル」をMonacaにアップロードしてください。
 
 <img width="480" src="./images/422/110.png">
 
-成功すれば、下記のような画面になります。
+アップロードが完了すれば、下記のような画面になります。
 
 <img width="480" src="./images/422/111.png">
 
@@ -140,7 +152,8 @@ app.jsファイルを下記リンクから右クリック→「リンク先を�
 
 #### indexhtml
 
-index.htmlは下記のように変更します。
+index.htmlを、下記のように変更します。
+予め、index.htmlを用意しておいたので、ダウンロードすることも可能です。
 
 * [index.htmlのダウンロード](./js/422/index.html)
 
@@ -174,47 +187,62 @@ index.htmlは下記のように変更します。
 </html>
 ```
 
-index.htmlの内容の解説
+#### index.htmlの内容
 
+index.htmlファイルの内容を解説します。
+
+headerに必要な設定をします。
 * leaflet.jsとleaflet.cssの追加
-* app.jsの追加
-
 ```javascript
 ...
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+...
+```
+* app.jsの追加
+
+```javascript
+...
     <script type="text/javascript" src="js/app.js"></script>
 ...
 ```
 
-* bodyタグの記述
-  * スマフォン位置情報をとる関数の設定
-  * ボタンの配置
-  * 地図表示する場所の設定
-  
+bodyに必要な設定をします。
+
+* スマフォン位置情報関連の設定
 ```javascript
 ...
-<body>
     <script type="text/javascript">
         navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError, geoOption);
     </script>
+...
+```
 
+* ボタンの配置
+```javascript
+...
     <button onclick="save_geopoint()">ポイントを保存する</button>
     <button onclick ="find_geopoint()" style="width:100%;">ポイントを見る</button>
+...
+```
+* 地図表示する場所の設定
 
+```javascript
+...
     <div class="wrapper">
         <div id="canvas" style="width:100%; height:400px"</div>
     </div>
-</body>
 ...
 ```
+
 ---
 
 ### JavaScript の解説
 
 #### アプリキーとクライアントキーの設定
 
-先程、ニフティクラウドmobile backendのサーバーアプリ作成時に保存した。アプリキーとクライアントキーをapp.jsファイルに設定をしてください
+ニフティクラウド mobile backendのプロジェクト作成時にメモをした。アプリキーとクライアントキーをapp.jsファイルに記述してください。
+このキーが間違っていると、ニフティクラウド mobile backendにアクセス出来ないのでご注意ください。
 
 ```javascript
 ...
@@ -226,12 +254,15 @@ var YOUR_CLIENT_KEY = "クライアントキー";
 
 ---
 
-アプリ起動時に実行されます。
-ここでニフティクラウドmobile backendとの接続をアプリキーとクライアントキーを使って登録をします。
+#### app.jsの解説
+
+app.jsの内容について解説して行きます。
+
+ニフティクラウド mobile backendとの接続をアプリキーとクライアントキーを使って登録します。
 
 ```javascript
 ...
-//ニフティクラウドmobile backendの準備
+ //ニフティクラウドmobile backendの準備
  $(function(){
     ncmb = new NCMB(YOUR_APP_KEY,YOUR_CLIENT_KEY);
     console.debug("ニフティクラウドmobile backendの準備");
@@ -242,7 +273,7 @@ var YOUR_CLIENT_KEY = "クライアントキー";
 
 ---
 
-位置情報を保存するためのクラス(変数)です
+位置情報を保存するためのクラスです
 
 ```javascript
 ...
@@ -253,7 +284,7 @@ CurrentPoint()
 
 ---
 
-位置情報をスマフォから取得するための設定
+位置情報を取得するために、コールバック関数を登録します
 
 index.html
 ```html
@@ -269,34 +300,37 @@ index.html
 * geoOption
   - 位置情報取得時に設定するオプション
 * writemap
-  - OSMの描画。onGeoSuccessから呼ばれる
+  - OSMの描画。onGeoSuccessから呼ばれます
 
 ---
 
 ポイントを保存するボタンの設定
+
 index.html
 ```html
 <button onclick="save_geopoint()">ポイントを保存する</button>
 ```
 * save_geopoint()
-  - 現在地をポイントとして登録する
+  - 現在地をポイントとして登録する処理
 * onSaveSuccess
   - ポイントの登録時に位置情報取得に成功した場合に呼ばれるコールバック関数
 
 ---
 
 ポイントを表示するボタンの設定
+
 index.html
 ```html
 <button onclick ="find_geopoint()" style="width:100%;">ポイントを見る</button>
 ```
 
 * find_geopoint
-  - 登録されたポイントを引き出し地図上に表示する
+  - 登録されたポイントを引き出し地図上に表示する処理
 * onFindSuccess
   - 登録ポイントの表示時に位置情報取得に成功した場合に呼ばれるコールバック関数
 
 ---
+
 ニフティクラウドmobile backendに位置データを保存
 
 ```javascript
@@ -370,5 +404,5 @@ var onFindSuccess = function(location){
 ### 課題
 
 1. 使いにくいと思う部分を考えてみてください
-2. 自分で欲しい機能はどんなものですか？それは実装可能でしょうか？ 
-3. コードを読みやすくするために、対応していない不具合があります。それはどこでしょう？
+2. 自分で欲しい機能はどんなものですか？それは実装可能でしょうか？
+3. コードを読みやすくするために対応していない不具合があります。それはどこでしょう？
