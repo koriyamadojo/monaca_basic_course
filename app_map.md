@@ -132,7 +132,7 @@ Cordova プラグインの設定をします。
 #### アップロードの方法
 app.jsファイルを下記リンクから右クリック→「リンク先を別名で保存」を選択してダウンロードしてください
 
-* [app.jsのダウンロード](./js/422/app.js)
+* [app.jsのダウンロード](https://raw.githubusercontent.com/koriyamadojo/monaca_basic_course/master/js/422/app.js)
 
 ファイルメニューから「アップロード」を選択するか、IDEのjsフォルダーを右クリックして「アップロード」を選択すればダウンロードすることが出来ます。
 
