@@ -8,13 +8,14 @@ RSSリーダーのサンプルコードはこちら
 
 このアプリではAjax通信をするアプリを作るのがゴールです。
 
-こちらの資料を参考に解説します。
+こちらの資料を参考にしています
 <https://docs.monaca.io/ja/sampleapp/samples/sample_rss_reader/>
 
 ---
 
 ### RSSリーダーとは
-RSSとは、インターネット上で配布されているニュースや情報のリンク一覧のようもので、これを読む為のアプリをRSSリーダーといいます。
+RSSとは、インターネット上で配布されているニュースや情報のリンク一覧のようもので、
+これを読む為のアプリをRSSリーダーといいます。
 
 <img width="480" src="./images/421/000.png">
 参考：<http://www.itmedia.co.jp/>
@@ -23,17 +24,20 @@ RSSとは、インターネット上で配布されているニュースや情�
 
 ## プロジェクトの作成
 
-こちらから、このプロジェクトをダウンロードして利用します
-<https://docs.monaca.io/ja/_downloads/sample_rss_reader.zip>
+RSSアプリではサンプルプロジェクトを利用します。
+
+- プロジェクトをダウンロードはこちらからです。
+  - <https://docs.monaca.io/ja/_downloads/sample_rss_reader.zip>
 
 
+---
+
+プロジェクトのダウンロードが完了したら、
 ダッシュボードを開いて「Import Porject」を開きます。
 
 <img width="480" src="./images/421/001.png">
 
----
-
-下記の項目を選択して最後に「インポート」ボタンをクリックします。
+下記の項目を選択して最後に「インポート」ボタンをクリックしてプロジェクトをインポートします。。
 
 * プロジェクト名に「RSSリーダー」を入力する
 * URLを指定してインポートを選択する
@@ -63,7 +67,10 @@ RSSとは、インターネット上で配布されているニュースや情�
 ---
 
 ### 必要な JS/CSS コンポーネント
+
 * jQuery
+
+JavaScriptでjQueryを使用します。
 
 <img width="480" src="./images/421/004.png">
 
@@ -90,7 +97,11 @@ index.html はスタート画面のページです。ソースコードを次に
 ### JavaScript の解説
 
 #### index.html
-アプリを起動すると、RSS フィードの取得処理が直ちに始まります。RSS フィードのコンテンツの読み込み中は、 loading.gif ファイルが表示されます。次の JavaScript コードで、RSS フィードの取得を行う関数を呼び出します。取得処理を行う関数は、feed-reader.js 内で定義されています。このファイルの解説は、後ほどします。RSS フィードで使用している URL は変更可能ですので、他の URL もぜひお試しください。
+
+アプリを起動すると、RSSフィードの取得処理が直ちに始まります。
+RSSフィードのコンテンツの読み込み中は、 loading.gif ファイルが表示されます。
+次の JavaScriptコードで、RSSフィードの取得を行う関数を呼び出します。
+取得処理を行う関数は、feed-reader.js 内で定義されています。
 
 ```javascript
 ...
@@ -105,7 +116,8 @@ $(function() {
 ```
 
 #### feed-reader.js
-RSS フィードを取得する関数 （ Feed.load() ） が呼ばれると、次の JavaScript コードが実行されます。
+
+RSS フィードを取得する関数「 Feed.load() 」 が呼ばれると、次のJavaScript コードが実行されます。
 
 ```javascript
 ...
@@ -143,13 +155,14 @@ RSS フィードを取得する関数 （ Feed.load() ） が呼ばれると、�
         });
 ...
 ```
-この関数の実行に成功すると、取得した RSS フィードが、スタート/ホーム画面のページ上に、一覧状に表示されます。下のスクリーンショットをご確認ください。
+
+この関数の実行に成功すると、取得した RSS フィードが、スタート/ホーム画面のページ上に、一覧状に表示されます。
 
 <img width="240" src="./images/421/006.png">
 
 ---
 
-次の JavaScript で、スタート/ホーム画面 ( index.html ) の RSS フィードの配置と表示を行います。
+次の JavaScript で、スタート/ホーム画面「index.html」のRSSフィードの配置と表示を行います。
 
 ```javascript
 ...
@@ -171,11 +184,13 @@ RSS フィードを取得する関数 （ Feed.load() ） が呼ばれると、�
             '<h2>' + title + '</h2><p>' + description + '</p></li>';
     };...
 ```
-RSSフィードは、一覧形式で表示されています。このフィードの各リンクをクリックすると、次のサンプルのように、ChildBrowser 内で指定先の URL へ遷移します。
+
+RSSフィードは、一覧形式で表示されています。
+このフィードの各リンクをクリックすると、次のサンプルのように、
+ChildBrowser 内で指定先の URL へ遷移します。
 
 <img width="240" src="./images/421/007.png">
 
-次の JavaScript コードで上述の動作をします。
 ```javascript
 ...
     Feed.prototype.addClickHandler = function() {
