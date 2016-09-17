@@ -155,7 +155,7 @@ app.jsファイルを下記リンクから右クリック→「リンク先を�
 index.htmlを、下記のように変更します。
 予め、index.htmlを用意しておいたので、ダウンロードすることも可能です。
 
-* [index.htmlのダウンロード](./js/422/index.html)
+* [index.htmlのダウンロード](https://raw.githubusercontent.com/koriyamadojo/monaca_basic_course/master/js/422/index.html)
 
 ```javascript
 <!DOCTYPE HTML>
