@@ -34,7 +34,7 @@
    * ロジックを入れたアプリ
        * 勤怠アプリ
            * データベース
-       * [シンプルゲーム](app_game.md)
+       * [シンプルゲーム](app_brick_game.md)
 * Google Playにアプリを登録
    * Googleアカウント作成
    * Google Playに開発者登録
