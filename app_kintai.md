@@ -90,5 +90,48 @@ index.htmlに下記を入力してください。
 </body>
 ```
 
+「履歴へ」を押したらページを遷移するようにします。ここからJavaScriptを書いていきますが、下記のようにutil.js, event.js, app.jsの３つのJavaScriptファイルを作ってください。
+
+* util.js・・・アプリのロジックの部品となる関数を書く
+* event.js・・・ボタンをクリックしたときのイベントのロジックを書く
+* app.js・・・アプリのロジックをまとめて起動する部分を書く
+
+まず、index.html内のheadタグ内にあるScriptタグは、下記のように書き換えます。もともとあったscriptタグは削除してください（分割してこれら３つのファイルの中に書いていきます）。
+
+```html
+    <script src='js/util.js'></script>
+    <script src='js/event.js'></script>
+    <script src='js/app.js'></script>
+ ```
+
+app.js内に下記のように書きます。
+
+``` js
+ons.ready(function() {
+    console.log("Onsen UI is ready!");
+    registerPageTransitionEvent();
+});
+```
+
+event.js内に下記のように書きます。
+
+```js
+function registerPageTransitionEvent() {
+    var push_button = document.getElementById('push-button');
+    var navigator = document.getElementById('navigator');
+    push_button.onclick = function(){
+        navigator.pushPage('page2');
+        showAllHistory();
+    };
+}
+```
+
+ここまで書いたらアプリを実行してみましょう。「履歴へ」ボタンを押すと別画面に遷移するようになっています。
+
+
+
+
+
+
 
 
