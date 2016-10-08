@@ -33,7 +33,6 @@
        * [地図アプリ (ニフティクラウドを使う)](app_map.md)
    * ロジックを入れたアプリ
        * [勤怠アプリ](app_kintai.md)
-           * データベース
        * [シンプルゲーム](app_brick_game.md)
 * Google Playにアプリを登録
    * Googleアカウント作成

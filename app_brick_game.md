@@ -33,7 +33,7 @@ WebGL経由でGPUを使う(（非対応のデバイスではCanvasを使う）�
 Monacaの「新規プロジェクトの作成」→「サンプルアプリ」→「ブロック崩し」を選択してプロジェクトを作成します。
 アプリ名は任意に変更してください。
 
-<img width="480" src="./images/424/000.png">
+<img width="480" src="./images/432/000.png">
 
 ### ファイル構成
 
@@ -132,7 +132,7 @@ requestAnimFrame(animate);
 
 ニフティクラウドmobilebackendを利用して、ゲームにランキング機能を実装します。
 
-<img width="480" src="./images/424/013.png">
+<img width="480" src="./images/432/013.png">
 
 主に下記の機能を追加します
 
@@ -166,11 +166,11 @@ requestAnimFrame(animate);
 
 新規にアプリを作成
 
-<img width="480" src="./images/424/008.png">
+<img width="480" src="./images/432/008.png">
 
 アプリケーションキーとクライアントキーを取得
 
-<img width="480" src="./images/424/009.png">
+<img width="480" src="./images/432/009.png">
 
 
 #### Monaca側
@@ -196,13 +196,13 @@ JS/CSSコンポーネントを追加
 * Onsen UI ver 1.3.17
 * ncb ver 2.1.3
 
-<img width="480" src="./images/424/010.png">
+<img width="480" src="./images/432/010.png">
 
 Cordovaプラグイン
 
 * Nifty (プッシュ通知用)
 
-<img width="480" src="./images/424/012.png">
+<img width="480" src="./images/432/012.png">
 
 ---
 
@@ -245,7 +245,7 @@ YOUR_APPLICATION_KEY、YOUR_CLIENT_KEY に各自のアプリケーションキ�
 ### スコアを保存する
 スコアの保存処理を実装していきます。
 
-<img width="480" src="./images/424/012.png">
+<img width="480" src="./images/432/012.png">
 
 
 ### スコア保存（送信）処理を実装する
